@@ -25,12 +25,14 @@ class Productor(models.Model):
     email=models.EmailField()
     telefono=models.IntegerField()
     facebook=models.TextField()
+    instagram=models.TextField()
     region=models.ForeignKey(Region,on_delete=models.CASCADE)
     password=models.TextField()
 
 #Modelo Producto almacena los datos de todos los productos de cada productor
 class Producto(models.Model):
     nombre=models.TextField()
+    id_productor=models.IntegerField()
     descripcion=models.TextField()
     variedad=models.TextField()
     tipo_produccion=models.TextField()
