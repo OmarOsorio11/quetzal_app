@@ -6,17 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quetzal</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
 </head>
 <body>
-    <div>
-        <img src="{% static 'img/prueba.jpg' %}" alt="">
-        <h1>Bienvenido!</h1>
-        <h2>Ingresa como: </h2>
-        <a href=""><p>Cliente</p></a>
-        <a href=""><p>Productor</p></a>
-        <!--
-            Falta agregar estilos con CSS
-        -->
+    <div class="contenedor">
+        <div class="p_izq">
+            <img src="{% static 'img/prueba.jpg' %}" alt="">
+        </div>
+        <div class="p_derecha">
+            <h1>Bienvenido!</h1>
+            <h2>Ingresa como: </h2>
+            <a href="" class="buton"><p>Cliente</p></a>
+            <a href=""><p>Productor</p></a>
+            <!--
+                Paso de parametros por url
+            -->
+        </div>
     </div>
 </body>
 </html>

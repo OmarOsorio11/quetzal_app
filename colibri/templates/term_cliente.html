@@ -14,9 +14,16 @@
 
         region_veracruz.jpg
     </h1>
-    {% for region in regiones %} 
-    <h1>{{ region.nombre }}</h1>
-    <h1>{{ region.caracteristicas }}</h1>
-    {% endfor %}
+    <table>
+        {% for region in regiones %} 
+        <tr>
+            <td><img src="{% static 'img/prueba.jpg' %}" alt=""></td>
+            <td>{{ region.nombre }}</td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+    
 </body>
 </html>

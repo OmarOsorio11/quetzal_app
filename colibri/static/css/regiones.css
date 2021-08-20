@@ -1,0 +1,40 @@
+/*Extra-LArgue*/
+@media (min-width: 1100px) {
+    body{
+        background-color: black;
+    }
+}
+/*Largue*/
+@media (min-width: 992px) and (max-width: 1100px) {
+    body{
+        background-color: gray;
+    }
+
+}
+/*Medium*/
+@media (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-color: blue;
+    }
+
+}
+/*Small*/ 
+@media (min-width: 576px) and (max-width: 768px) {
+    body{
+        background-color: yellow;
+    }
+
+}
+/*ExtraSmall*/
+@media (min-width: 380px) and (max-width: 576px) {
+    body{
+        background-color: red;
+    }
+}
+/*ExtraExtraSmall*/
+@media (max-width: 380px) {
+    body{
+        background-color: green;
+    }
+
+}
