@@ -8,6 +8,17 @@
     <title>Regiones</title>
 </head>
 <body>
-    hola
+    <img src="{% static 'img/prueba.jpg' %}" alt="">
+    <h1>Regiones cafetaleras:</h1>
+    <table>
+        {% for region in regiones %} 
+        <tr>
+            <td><img src="{% static 'img/descarga.jpg' %}" alt=""></td>
+            <td><a href="{% url 'region_specific' region.nombre %}">{{ region.nombre }}</a></td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
 </body>
 </html>
