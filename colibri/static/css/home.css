@@ -23,6 +23,8 @@ body{
 @media (min-width: 1100px) {
     body{
         background-color: black;
+        background-image: url("img/prueba.jpg");
+        background-size: cover;
     }
 }
 @media (min-width: 992px) and (max-width: 1100px) {
